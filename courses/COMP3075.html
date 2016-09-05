@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+	   <title>Personal Website</title>
+        <link href="../css/COURSEScssdoc.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+<body>
+    
+<!-- MENU -->
+    <ul class="menu"> 
+    <li><a href="../AboutMe.html">About Me</a></li>
+    <li><a href="../other/Academic.html">Academic</a></li>
+    <li><a href="../other/Professional.html">Professional</a></li>
+    <li style="float:right"><a href="../other/MoreAboutMe.html">More About Me</a></li>
+    </ul>
+<!-- MENU --> 
+    
+    
+   <br /> <br /> <br />
+    
+    
+<!--DROPDOWN BUTTON-->
+<div class="dropdown">
+<button id="myBtn" class="dropbtn">Change Course</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="COMP3010.html">COMP 3010</a>
+    <a href="COMP3110.html">COMP 3110</a>
+    <a class="active" href="COMP3075.html">COMP 3075</a>
+    <a href="COMP4016.html">COMP 4016</a>
+    <a href="COMP4018.html">COMP 4018</a>
+    <a href="COMP4998AndroidProgramming.html">COMP 4998 A.P.</a>
+    <a href="COMP4999HumanInterface.html">COMP 4999 H.I.</a>
+    <a href="MATE3005.html">MATE 3005</a>
+    <a href="MATE3031.html">MATE 3031</a>
+    <a href="MATE3032.html">MATE 3032</a>
+  </div>
+</div>
+
+<script>
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("myBtn").onclick = function() {myFunction()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+    
+<!-- DROPDOWN BUTTON-->
+    
+    <h1><center>
+        <p>Int. Estructura Datos</p>
+        <table style="width:85%">
+            <tr>
+                <th>Course:</th>
+                <td>COMP 3075</td>
+            </tr>
+                
+            <tr>
+                <th>Credits:</th>
+                <td>3</td>
+            </tr>
+                
+            <tr>
+                <th>Professor:</th>
+                <td>Ana Carmen Gonzalez</td>
+            </tr>
+                
+            <tr>
+                <th>Contact e-mail:</th>
+                <td>anacarmen.gonzalez@upr.edu</td>
+            </tr>
+            
+            <tr>
+                <th>Course description:</th>
+                <td>Se discuten detalladamente las estructuras de datos que se usan en Ciencias de Computaci&#243;n. &#201;stas son: stacks, queues, listas, &#225;rboles y grafos. Se discute su implementaci&#243;n basada en arreglos y su implementaci&#243;n basada en entrelazados, seg&#250;n sea apropiado. Se discuten algoritmos de b&#250;squeda y ordenamiento y su implementaci&#243;n. Se presentan conceptos b&#225;sicos de an&#225;lisis de algoritmos. Para cada tema se presenta el an&#225;lisis del algoritmo usando notaci&#243;n Big-O. Se hace uso extenso de las t&#233;cnicas de programaci&#243;n orientada a objetos , de recursi&#243;n y de los principios de software engineering.</td>
+            </tr>
+
+            </table>  
+    </center></h1>
+    
+</body>
+</html>
+
+<!-- Human Interface FINAL PROJECT - Joseph Álvarez Cortés-->

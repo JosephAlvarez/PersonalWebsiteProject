@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+	   <title>Personal Website</title>
+        <link href="../css/COURSEScssdoc.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+<body>
+    
+<!-- MENU -->
+    <ul class="menu"> 
+    <li><a href="../AboutMe.html">About Me</a></li>
+    <li><a href="../other/Academic.html">Academic</a></li>
+    <li><a href="../other/Professional.html">Professional</a></li>
+    <li style="float:right"><a href="../other/MoreAboutMe.html">More About Me</a></li>
+    </ul>
+<!-- MENU --> 
+    
+    
+  <br /> <br /> <br />
+    
+    
+<!--DROPDOWN BUTTON-->
+<div class="dropdown">
+<button id="myBtn" class="dropbtn">Change Course</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="COMP3010.html">COMP 3010</a>
+    <a href="COMP3110.html">COMP 3110</a>
+    <a href="COMP3075.html">COMP 3075</a>
+    <a href="COMP4016.html">COMP 4016</a>
+    <a class="active" href="COMP4018.html">COMP 4018</a>
+    <a href="COMP4998AndroidProgramming.html">COMP 4998 A.P.</a>
+    <a href="COMP4999HumanInterface.html">COMP 4999 H.I.</a>
+    <a href="MATE3005.html">MATE 3005</a>
+    <a href="MATE3031.html">MATE 3031</a>
+    <a href="MATE3032.html">MATE 3032</a>
+  </div>
+</div>
+
+<script>
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("myBtn").onclick = function() {myFunction()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+    
+<!-- DROPDOWN BUTTON-->
+    
+    <h1><center>
+        <p>Organizaci&#243;n Computadora</p>
+        <table style="width:85%">
+            <tr>
+                <th>Course:</th>
+                <td>COMP 4018</td>
+            </tr>
+                
+            <tr>
+                <th>Credits:</th>
+                <td>3</td>
+            </tr>
+                
+            <tr>
+                <th>Professor:</th>
+                <td>Darrell W. Hajek</td>
+            </tr>
+                
+            <tr>
+                <th>Contact e-mail:</th>
+                <td>darrell.hajek@upr.edu</td>
+            </tr>
+            
+            <tr>
+                <th>Course description:</th>
+                <td>Curso Introductorio en Database Design.</td>
+            </tr>
+
+            </table>  
+    </center></h1>
+    
+</body>
+</html>
+
+<!-- Human Interface FINAL PROJECT - Joseph Álvarez Cortés-->
